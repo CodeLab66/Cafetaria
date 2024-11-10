@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Nanum+Myeongjo&family=Quicksand:wght@300..700&family=Rochester&display=swap');
+
+.custom-navbar {
+    background-color: #652f01;
+    height: 100px;
+}
+
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+    color: white;
+    font-family: "Rochester", cursive;
+    font-size: 25px;
+}
+
+.navbar-brand img{
+    height: 110px;
+    width: auto;
+}
+
+.container-fluid{
+    --bs-gutter-x: 6.5rem;
+}
+
+.navbar-collapse {
+    justify-content: end;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #f0a500;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 50px;
+}
+
+.navbar-nav .nav-item:last-child {
+    margin-right: 0;
+}
