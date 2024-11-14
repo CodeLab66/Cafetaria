@@ -6,6 +6,7 @@ USE cafetaria;
 
 CREATE TABLE User (
     UserID INT PRIMARY KEY AUTO_INCREMENT,
+    UserName VARCHAR(50) UNIQUE,
     Name VARCHAR(100),
     PhoneNumber VARCHAR(15),
     Email VARCHAR(100),
@@ -15,9 +16,10 @@ CREATE TABLE User (
 );
 
 CREATE TABLE Customer (
-    CustomerID INT PRIMARY KEY,
+    UserName VARCHAR(50),
     NumberOrders INT,
-    FOREIGN KEY (CustomerID) REFERENCES User(UserID)
+    PRIMARY KEY (UserName),
+    FOREIGN KEY (UserName) REFERENCES User(UserName) ON DELETE CASCADE
 );
 
 CREATE TABLE Branch (
@@ -28,11 +30,13 @@ CREATE TABLE Branch (
 );
 
 CREATE TABLE Employee (
-    EmployeeID INT PRIMARY KEY AUTO_INCREMENT,
+    EmployeeKey VARCHAR(50) PRIMARY KEY,
+    UserName VARCHAR(50),
     BranchID INT,
     Designation VARCHAR(50),
     HireDate DATE,
     Salary DECIMAL(10, 2),
+    FOREIGN KEY (UserName) REFERENCES User(UserName) ON DELETE CASCADE,
     FOREIGN KEY (BranchID) REFERENCES Branch(BranchID)
 );
 
