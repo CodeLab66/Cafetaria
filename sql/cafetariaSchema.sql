@@ -30,8 +30,8 @@ CREATE TABLE Branch (
 );
 
 CREATE TABLE Employee (
-    EmployeeKey VARCHAR(50) PRIMARY KEY,
-    UserName VARCHAR(50),
+    EmployeeID VARCHAR(50) PRIMARY KEY NOT NULL,
+    UserName VARCHAR(50), 
     BranchID INT,
     Designation VARCHAR(50),
     HireDate DATE,
@@ -39,6 +39,7 @@ CREATE TABLE Employee (
     FOREIGN KEY (UserName) REFERENCES User(UserName) ON DELETE CASCADE,
     FOREIGN KEY (BranchID) REFERENCES Branch(BranchID)
 );
+
 
 CREATE TABLE Menu (
     ItemID INT PRIMARY KEY AUTO_INCREMENT,
@@ -50,12 +51,12 @@ CREATE TABLE Menu (
 
 CREATE TABLE Orders (
     OrderID INT PRIMARY KEY AUTO_INCREMENT,
-    CustomerID INT,
-    EmployeeID INT,
+    UserName VARCHAR(50),
+    EmployeeID VARCHAR(50),
     BranchID INT,
     OrderDate DATE,
     OrderTime TIME,
-    FOREIGN KEY (CustomerID) REFERENCES Customer(CustomerID),
+    FOREIGN KEY (UserName) REFERENCES Customer(UserName),
     FOREIGN KEY (EmployeeID) REFERENCES Employee(EmployeeID),
     FOREIGN KEY (BranchID) REFERENCES Branch(BranchID)
 );
@@ -70,11 +71,11 @@ CREATE TABLE Transaction (
 
 CREATE TABLE Review (
     ReviewID INT PRIMARY KEY AUTO_INCREMENT,
-    CustomerID INT,
+    UserName VARCHAR(50),
     OrderID INT,
     Rating INT CHECK (Rating >= 1 AND Rating <= 5),
     Comment TEXT,
-    FOREIGN KEY (CustomerID) REFERENCES Customer(CustomerID),
+    FOREIGN KEY (UserName) REFERENCES Customer(UserName),
     FOREIGN KEY (OrderID) REFERENCES Orders(OrderID)
 );
 
