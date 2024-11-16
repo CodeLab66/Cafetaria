@@ -165,3 +165,4 @@ VALUES ('ali_khan', 1, 4, 'Great coffee and quick service!'),
        ('ayesha_zafar', 2, 5, 'Loved the burger!'),
        ('sara_ali', 3, 3, 'Good, but the pasta was cold.'),
        ('usman_tariq', 4, 5, 'Amazing frappuccino!');
+
