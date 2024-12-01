@@ -1,0 +1,167 @@
+/* Full Background Image */
+body {
+    background: url('../images/aboutSectionBG.png') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+.cart-banner {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px 0;
+    text-align: center;
+    margin-top: 80px;
+    color: yellow;
+}
+
+.cart-banner h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.cart-banner p {
+    font-size: 18px;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    border: none;
+}
+
+.cart-items .table {
+    margin-top: 40px;
+    background-color: #ffbe33e3;
+    border-radius: 30px;
+    color: black;
+}
+
+.cart-items .table th {
+    text-align: center;
+    border: none;
+    font-family: 'Dancing Script', cursive;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.cart-items .table td {
+    text-align: center;
+    border: none;
+}
+
+.cart-items .table input[type="number"] {
+    width: 60px;
+    text-align: center;
+}
+
+#checkout-button {
+    margin-top: 20px;
+    display: block;
+    width: 80%;
+    font-size: 18px;
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+}
+
+#cart-total {
+    margin-top: 30px;
+    text-align: right;
+    font-size: 15px;
+}
+
+/* Back Button */
+.back-btn {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background-color: #ffbe33;
+    color: white;
+    border-color: #ffbe33;
+    padding: 10px 12px;
+    font-size: 12px;
+    border-radius: 21px;
+    text-decoration: none;
+}
+
+.back-btn:hover {
+    background-color: yellow;
+}
+
+.btn-secondary {
+    background-color: #c40606;
+    border-color: #c40606;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .cart-banner {
+        padding: 20px 0;
+    }
+
+    .cart-banner h2 {
+        font-size: 28px;
+    }
+
+    .cart-banner p {
+        font-size: 14px;
+    }
+
+    /* Table Styling for smaller screens */
+    .cart-items .table {
+        margin-top: 20px;
+        background-color: #ffbe33e3;
+        border-radius: 15px;
+        color: black;
+        width: 100%; /* Ensure table fits within screen width */
+        overflow-x: auto; /* Allow horizontal scrolling */
+        display: block; /* Make the table scrollable horizontally */
+    }
+
+    .cart-items .table th,
+    .cart-items .table td {
+        font-size: 14px;
+        padding: 8px; /* Reduce padding to prevent overflow */
+    }
+
+    .cart-items .table th {
+        font-size: 18px; /* Slightly smaller font size for headers */
+    }
+
+    .table .btn-secondary {
+        width: auto;
+        max-height: min-content;
+        font-size: 12px;
+    }
+
+    .table .btn-danger{
+        width: 100%;
+        font-size: 10px;
+    }
+
+    #checkout-button {
+        width: 60%;
+        margin-right: 3%; 
+    }
+
+    #cart-total h4{
+        font-size: 17px;
+        margin-right: 7%;
+    }
+
+    #clear-cart {
+        font-size: 13px;
+        width: 30%;
+        height: min-content;
+        margin-top: 6%;
+        margin-left: 3%;
+    }
+
+    .back-btn {
+        font-size: 14px;
+        padding: 6px 8px;
+    }
+}
