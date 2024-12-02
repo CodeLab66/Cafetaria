@@ -44,7 +44,6 @@ CREATE TABLE Employee (
 CREATE TABLE Menu (
     ItemID INT PRIMARY KEY AUTO_INCREMENT,
     Category VARCHAR(50),
-    Size VARCHAR(20),
     Price DECIMAL(5, 2),
     AvailabilityStatus VARCHAR(10)
 );
@@ -60,7 +59,7 @@ CREATE TABLE Orders (
     FOREIGN KEY (EmployeeID) REFERENCES Employee(EmployeeID),
     FOREIGN KEY (BranchID) REFERENCES Branch(BranchID)
 );
-
+ 
 CREATE TABLE Transaction (
     TransactionID INT PRIMARY KEY AUTO_INCREMENT,
     OrderID INT,
@@ -88,4 +87,4 @@ CREATE TABLE Delivery (
     DeliveryTime TIME,
     FOREIGN KEY (OrderID) REFERENCES Orders(OrderID),
     FOREIGN KEY (BranchID) REFERENCES Branch(BranchID)
-);
+);	
