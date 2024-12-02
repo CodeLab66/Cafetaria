@@ -615,8 +615,14 @@ a:focus {
 }
 
 .about_section {
-  background: #222831;
+  background-image: url(../images/aboutSectionBG.png);
+  background-size: cover;
   color: #ffffff;
+}
+
+.about_section h2{
+  color: #e69c00;
+  font-weight: bolder;
 }
 
 .about_section .row {
