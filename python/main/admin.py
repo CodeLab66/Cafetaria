@@ -8,8 +8,8 @@ class UserAdmin(admin.ModelAdmin):
 
 
 class CustomerAdmin(admin.ModelAdmin):
-    list_display = ('UserName', 'NumberOrders')
-    search_fields = ('UserName',)
+    list_display = ('UserID', 'NumberOrders')
+    search_fields = ('UserID__UserName',)
 
 
 class BranchAdmin(admin.ModelAdmin):
@@ -18,18 +18,18 @@ class BranchAdmin(admin.ModelAdmin):
 
 
 class EmployeeAdmin(admin.ModelAdmin):
-    list_display = ('EmployeeID', 'UserName', 'BranchID', 'Designation', 'HireDate', 'Salary')
-    search_fields = ('EmployeeID', 'UserName__UserName', 'BranchID__BranchName', 'Designation')
+    list_display = ('EmployeeID', 'UserID', 'BranchID', 'Designation', 'HireDate', 'Salary')
+    search_fields = ('EmployeeID', 'UserID__UserName', 'BranchID__BranchName', 'Designation')
 
 
 class MenuAdmin(admin.ModelAdmin):
-    list_display = ('ItemID', 'Category', 'Size', 'Price', 'AvailabilityStatus')
-    search_fields = ('Category', 'Size')
+    list_display = ('ItemID', 'Category', 'Price', 'AvailabilityStatus')
+    search_fields = ('Category',)
 
 
 class OrdersAdmin(admin.ModelAdmin):
-    list_display = ('OrderID', 'UserName', 'EmployeeID', 'BranchID', 'OrderDate', 'OrderTime')
-    search_fields = ('UserName__UserName', 'EmployeeID', 'BranchID__BranchName', 'OrderDate')
+    list_display = ('OrderID', 'UserID', 'EmployeeID', 'BranchID', 'OrderDate', 'OrderTime')
+    search_fields = ('UserID__UserName', 'EmployeeID', 'BranchID__BranchName', 'OrderDate')
 
 
 class TransactionAdmin(admin.ModelAdmin):
@@ -38,8 +38,8 @@ class TransactionAdmin(admin.ModelAdmin):
 
 
 class ReviewAdmin(admin.ModelAdmin):
-    list_display = ('ReviewID', 'UserName', 'OrderID', 'Rating', 'Comment')
-    search_fields = ('UserName__UserName', 'OrderID__OrderID')
+    list_display = ('ReviewID', 'UserID', 'OrderID', 'Rating', 'Comment')
+    search_fields = ('UserID__UserName', 'OrderID__OrderID')
 
 
 class DeliveryAdmin(admin.ModelAdmin):

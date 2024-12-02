@@ -18,11 +18,11 @@ class User(models.Model):
 
 
 class Customer(models.Model):
-    UserName = models.OneToOneField(User, on_delete=models.CASCADE, db_column='UserName', primary_key=True)
+    UserID = models.OneToOneField(User, on_delete=models.CASCADE, db_column='UserID', primary_key=True)
     NumberOrders = models.IntegerField()
 
     def __str__(self):
-        return f"Customer: {self.UserName.UserName}"
+        return f"Customer: {self.UserID.UserName}"
 
     class Meta:
         db_table = 'Customer'
@@ -43,7 +43,7 @@ class Branch(models.Model):
 
 class Employee(models.Model):
     EmployeeID = models.CharField(max_length=50, primary_key=True)
-    UserName = models.ForeignKey(User, on_delete=models.CASCADE, db_column='UserName')
+    UserID = models.ForeignKey(User, on_delete=models.CASCADE, db_column='UserID')
     BranchID = models.ForeignKey(Branch, on_delete=models.CASCADE, db_column='BranchID')
     Designation = models.CharField(max_length=50)
     HireDate = models.DateField()
@@ -59,12 +59,11 @@ class Employee(models.Model):
 class Menu(models.Model):
     ItemID = models.AutoField(primary_key=True)
     Category = models.CharField(max_length=50)
-    Size = models.CharField(max_length=20)
     Price = models.DecimalField(max_digits=5, decimal_places=2)
     AvailabilityStatus = models.CharField(max_length=10)
 
     def __str__(self):
-        return f"{self.Category} - {self.Size}"
+        return f"{self.Category} - {self.Price}"
 
     class Meta:
         db_table = 'Menu'
@@ -72,7 +71,7 @@ class Menu(models.Model):
 
 class Orders(models.Model):
     OrderID = models.AutoField(primary_key=True)
-    UserName = models.ForeignKey(Customer, on_delete=models.CASCADE, db_column='UserName')
+    UserID = models.ForeignKey(Customer, on_delete=models.CASCADE, db_column='UserID')
     EmployeeID = models.ForeignKey(Employee, on_delete=models.CASCADE, db_column='EmployeeID')
     BranchID = models.ForeignKey(Branch, on_delete=models.CASCADE, db_column='BranchID')
     OrderDate = models.DateField()
@@ -100,7 +99,7 @@ class Transaction(models.Model):
 
 class Review(models.Model):
     ReviewID = models.AutoField(primary_key=True)
-    UserName = models.ForeignKey(Customer, on_delete=models.CASCADE, db_column='UserName')
+    UserID = models.ForeignKey(Customer, on_delete=models.CASCADE, db_column='UserID')
     OrderID = models.ForeignKey(Orders, on_delete=models.CASCADE, db_column='OrderID')
     Rating = models.IntegerField()
     Comment = models.TextField()
