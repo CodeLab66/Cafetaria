@@ -80,7 +80,7 @@ DATABASES = {
         'NAME': 'cafetaria',         # Name of your MySQL database
         'USER': 'root',            # MySQL username
         'PASSWORD': 'Bil@l.mysql.66',    # MySQL password
-        'HOST': 'localhost',                  # Typically 'localhost'
+        'HOST': '192.168.0.6',                  # Typically 'localhost'
         'PORT': '3306',                       # MySQL port (default is 3306)
     }
 }
