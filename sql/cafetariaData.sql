@@ -69,73 +69,73 @@ VALUES ('B1B1','B1B1', 1, 'Barista', '2022-03-01', 35000.00),
 
 -- Insert Menu Items
 -- Coffee
-INSERT INTO Menu (Category, Size, Price, AvailabilityStatus)
-VALUES ('Blonde Vanilla Latte', 'Regular', 350.00, 'Available'),
-       ('Cafe au lait', 'Regular', 300.00, 'Available'),
-       ('Caffe Americano', 'Large', 400.00, 'Available'),
-       ('Caffe Misto', 'Medium', 320.00, 'Available'),
-       ('Caffe Mocha', 'Large', 420.00, 'Available'),
-       ('Cappuccino', 'Medium', 350.00, 'Available'),
-       ('Classic Signature Chocolate', 'Regular', 380.00, 'Available'),
-       ('Golden Turmeric Latte', 'Medium', 360.00, 'Available'),
-       ('Honey Almond', 'Large', 390.00, 'Available'),
-       ('Iced Brown Sugar Oat', 'Medium', 400.00, 'Available'),
-       ('Iced Mocha', 'Large', 410.00, 'Available'),
-       ('Latte Macchiato', 'Medium', 370.00, 'Available'),
-       ('Lavender Latte', 'Medium', 360.00, 'Available'),
-       ('Signature Chocolate Salted Caramel', 'Regular', 380.00, 'Available'),
-       ('Signature Chocolate Toasted Almond', 'Regular', 390.00, 'Available'),
-       ('Signature Chocolate Toasted Marshmallow', 'Large', 420.00, 'Available'),
-       ('Sparkling Mint', 'Regular', 350.00, 'Available'),
-       ('Spiced Espresso', 'Medium', 370.00, 'Available'),
-       ('Strawberry Latte', 'Medium', 360.00, 'Available'),
-       ('Vanilla Latte', 'Large', 390.00, 'Available');
+INSERT INTO Menu (Category, Price, AvailabilityStatus)
+VALUES ('Blonde Vanilla Latte', 350.00, 'Available'),
+       ('Cafe au lait', 300.00, 'Available'),
+       ('Caffe Americano', 400.00, 'Available'),
+       ('Caffe Misto', 320.00, 'Available'),
+       ('Caffe Mocha', 420.00, 'Available'),
+       ('Cappuccino', 350.00, 'Available'),
+       ('Classic Signature Chocolate', 380.00, 'Available'),
+       ('Golden Turmeric Latte', 360.00, 'Available'),
+       ('Honey Almond', 390.00, 'Available'),
+       ('Iced Brown Sugar Oat', 400.00, 'Available'),
+       ('Iced Mocha', 410.00, 'Available'),
+       ('Latte Macchiato', 370.00, 'Available'),
+       ('Lavender Latte', 360.00, 'Available'),
+       ('Signature Chocolate Salted Caramel', 380.00, 'Available'),
+       ('Signature Chocolate Toasted Almond', 390.00, 'Available'),
+       ('Signature Chocolate Toasted Marshmallow', 420.00, 'Available'),
+       ('Sparkling Mint', 350.00, 'Available'),
+       ('Spiced Espresso', 370.00, 'Available'),
+       ('Strawberry Latte', 360.00, 'Available'),
+       ('Vanilla Latte', 390.00, 'Available');
 
 -- Tea
-INSERT INTO Menu (Category, Size, Price, AvailabilityStatus)
-VALUES ('Chai Latte', 'Medium', 320.00, 'Available'),
-       ('Chai Tea', 'Regular', 300.00, 'Available'),
-       ('Chai Tea Latte', 'Large', 340.00, 'Available'),
-       ('Iced Chai Latte', 'Large', 350.00, 'Available'),
-       ('Iced Chai Tea Latte', 'Medium', 330.00, 'Available'),
-       ('Iced Chai Tea Latte with Vanilla Ice Cream', 'Large', 370.00, 'Available'),
-       ('Iced Chai Tea Oat Latte', 'Medium', 360.00, 'Available');
+INSERT INTO Menu (Category, Price, AvailabilityStatus)
+VALUES ('Chai Latte', 320.00, 'Available'),
+       ('Chai Tea', 300.00, 'Available'),
+       ('Chai Tea Latte', 340.00, 'Available'),
+       ('Iced Chai Latte', 350.00, 'Available'),
+       ('Iced Chai Tea Latte', 330.00, 'Available'),
+       ('Iced Chai Tea Latte with Vanilla Ice Cream', 370.00, 'Available'),
+       ('Iced Chai Tea Oat Latte', 360.00, 'Available');
 
 -- Brewages
-INSERT INTO Menu (Category, Size, Price, AvailabilityStatus)
-VALUES ('Frozen Tropical Citrus Strawberry Energy Drink', 'Regular', 300.00, 'Available'),
-       ('Melon Burst Energy Drink', 'Large', 330.00, 'Available'),
-       ('Mango Dragon fruit Lemonade Refreshers', 'Medium', 320.00, 'Available'),
-       ('Pineapple Passion fruit Refreshers Lemonade', 'Large', 340.00, 'Available'),
-       ('Strawberry Acai Lemonade Refreshers', 'Regular', 310.00, 'Available'),
-       ('Frozen Mango Dragon fruit Refresher Lemonade', 'Large', 340.00, 'Available'),
-       ('Frozen Pineapple Passion fruit Refresher Lemonade', 'Medium', 330.00, 'Available'),
-       ('Frozen Strawberry Acai Refresher Lemonade', 'Large', 350.00, 'Available'),
-       ('Tropical Citrus Energy Drink', 'Medium', 320.00, 'Available');
+INSERT INTO Menu (Category, Price, AvailabilityStatus)
+VALUES ('Frozen Tropical Citrus Strawberry Energy Drink', 300.00, 'Available'),
+       ('Melon Burst Energy Drink', 330.00, 'Available'),
+       ('Mango Dragon fruit Lemonade Refreshers', 320.00, 'Available'),
+       ('Pineapple Passion fruit Refreshers Lemonade', 340.00, 'Available'),
+       ('Strawberry Acai Lemonade Refreshers', 310.00, 'Available'),
+       ('Frozen Mango Dragon fruit Refresher Lemonade', 340.00, 'Available'),
+       ('Frozen Pineapple Passion fruit Refresher Lemonade', 330.00, 'Available'),
+       ('Frozen Strawberry Acai Refresher Lemonade', 350.00, 'Available'),
+       ('Tropical Citrus Energy Drink', 320.00, 'Available');
 
 -- Frappuccino
-INSERT INTO Menu (Category, Size, Price, AvailabilityStatus)
-VALUES ('Caramel Brule Frappuccino', 'Medium', 400.00, 'Available'),
-       ('Chai Tea Cream Frappuccino', 'Large', 420.00, 'Available'),
-       ('Java Chip Frappuccino', 'Medium', 450.00, 'Available'),
-       ('Matcha Green Tea Frappuccino', 'Large', 460.00, 'Available'),
-       ('Mocha Cookie Crumble Frappuccino', 'Large', 470.00, 'Available'),
-       ('Peppermint White Chocolate Creme Frappuccino', 'Medium', 430.00, 'Available'),
-       ('Peppermint White Chocolate Mocha Frappuccino', 'Large', 440.00, 'Available'),
-       ('Strawberry Frappuccino', 'Medium', 410.00, 'Available'),
-       ('White Chocolate Creme Frappuccino', 'Large', 450.00, 'Available');
+INSERT INTO Menu (Category, Price, AvailabilityStatus)
+VALUES ('Caramel Brule Frappuccino', 400.00, 'Available'),
+       ('Chai Tea Cream Frappuccino', 420.00, 'Available'),
+       ('Java Chip Frappuccino', 450.00, 'Available'),
+       ('Matcha Green Tea Frappuccino', 460.00, 'Available'),
+       ('Mocha Cookie Crumble Frappuccino', 470.00, 'Available'),
+       ('Peppermint White Chocolate Creme Frappuccino', 430.00, 'Available'),
+       ('Peppermint White Chocolate Mocha Frappuccino', 440.00, 'Available'),
+       ('Strawberry Frappuccino', 410.00, 'Available'),
+       ('White Chocolate Creme Frappuccino', 450.00, 'Available');
 
 -- Other Food Items
-INSERT INTO Menu (Category, Size, Price, AvailabilityStatus)
-VALUES ('Beef Burger', 'Large', 550.00, 'Available'),
-       ('Krunch Burger', 'Regular', 400.00, 'Available'),
-       ('Grilled Fillet Burger', 'Large', 600.00, 'Available'),
-       ('Cheese Vegetable Pizza', 'Large', 800.00, 'Available'),
-       ('Mind Margarita Pizza', 'Medium', 700.00, 'Available'),
-       ('Pepperoni Pizza', 'Large', 850.00, 'Available'),
-       ('Macaroni Pasta', 'Regular', 500.00, 'Available'),
-       ('Alfredo Pasta', 'Large', 600.00, 'Available'),
-       ('French Fries', 'Medium', 200.00, 'Available');
+INSERT INTO Menu (Category, Price, AvailabilityStatus)
+VALUES ('Beef Burger', 550.00, 'Available'),
+       ('Krunch Burger', 400.00, 'Available'),
+       ('Grilled Fillet Burger', 600.00, 'Available'),
+       ('Cheese Vegetable Pizza', 800.00, 'Available'),
+       ('Mind Margarita Pizza', 700.00, 'Available'),
+       ('Pepperoni Pizza', 850.00, 'Available'),
+       ('Macaroni Pasta', 500.00, 'Available'),
+       ('Alfredo Pasta', 600.00, 'Available'),
+       ('French Fries', 200.00, 'Available');
 
 
 -- Sample Orders
