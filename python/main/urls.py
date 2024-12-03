@@ -9,4 +9,5 @@ urlpatterns = [
     path('about/', views.about_view, name='about'),  # Link to about.html
     path('book/', views.book_view, name='book'),      # Link to book.html
     path('cart/', views.cart_view, name='cart'),      # Link to cart.html
+    path('menu/', views.menu_view, name='menu'),   
 ]
