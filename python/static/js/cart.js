@@ -64,7 +64,3 @@ function updateCart() {
   // Initialize the cart on page load
   document.addEventListener('DOMContentLoaded', updateCart);
 
-  document.getElementById("checkout-button").addEventListener("click", function () {
-    window.location.href = "orderComplete.html";
-});
-  
