@@ -124,3 +124,19 @@ class Delivery(models.Model):
 
     class Meta:
         db_table = 'Delivery'
+
+
+
+class Reservation(models.Model):
+    ReservationID = models.AutoField(db_column='ReservationID', primary_key=True)
+    Name = models.CharField(db_column='Name', max_length=100)
+    PhoneNumber = models.CharField(db_column='PhoneNumber', max_length=15)
+    Email = models.EmailField(db_column='Email', max_length=100)
+    NumberOfPeople = models.IntegerField(db_column='NumberOfPeople')
+    ReservationDate = models.DateTimeField(db_column='ReservationDate')
+
+    def __str__(self):
+        return f"{self.Name} - {self.ReservationDate}"
+
+    class Meta:
+        db_table = 'ReservationTable'  # Explicitly map to your existing table

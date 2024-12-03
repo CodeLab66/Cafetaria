@@ -1,6 +1,6 @@
 from django.contrib import admin
 from .models import User, Customer, Branch, Employee, Menu, Orders, Transaction, Review, Delivery
-
+from .models import Reservation
 
 class UserAdmin(admin.ModelAdmin):
     list_display = ('UserID', 'UserName', 'Name', 'PhoneNumber', 'Email', 'Gender', 'Address')
@@ -45,6 +45,14 @@ class ReviewAdmin(admin.ModelAdmin):
 class DeliveryAdmin(admin.ModelAdmin):
     list_display = ('DeliveryID', 'OrderID', 'BranchID', 'DeliveryAddress', 'DeliveryStatus', 'DeliveryTime')
     search_fields = ('OrderID__OrderID', 'BranchID__BranchName')
+
+
+
+@admin.register(Reservation)
+class ReservationAdmin(admin.ModelAdmin):
+    list_display = ('ReservationID', 'Name', 'PhoneNumber', 'Email', 'NumberOfPeople', 'ReservationDate')
+    search_fields = ('Name', 'PhoneNumber', 'Email')
+    list_filter = ('ReservationDate',)
 
 
 admin.site.register(User, UserAdmin)

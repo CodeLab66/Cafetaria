@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 # , redirect
 # from django.contrib.auth.models import User
 # from django.contrib.auth import login
@@ -51,6 +51,8 @@ def about(request):
 #     return render(request, 'index.html')
 
 from .models import Menu
+# from .models import Reservation
+# from .forms import ReservationForm
 
 def index(request):
     menu_items = Menu.objects.all()
@@ -74,3 +76,17 @@ def cart_view(request):
 def menu_view(request):
     menu_items = Menu.objects.all()
     return render(request, 'menu.html', {'menu_items': menu_items})   # Render cart.html
+
+# def reservation_list(request):
+#     reservations = Reservation.objects.all()
+#     return render(request, 'reservation_list.html', {'reservations': reservations})
+
+# def create_reservation(request):
+#     if request.method == 'POST':
+#         form = ReservationForm(request.POST)
+#         if form.is_valid():
+#             form.save()
+#             return redirect('reservation_list')  # Redirect to the reservation list page
+#     else:
+#         form = ReservationForm()
+#     return render(request, 'create_reservation.html', {'form': form})

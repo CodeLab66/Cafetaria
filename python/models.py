@@ -240,3 +240,19 @@ class User(models.Model):
     class Meta:
         managed = False
         db_table = 'user'
+
+        
+        
+class Reservation(models.Model):
+    reservation_id = models.AutoField(primary_key=True)  # Equivalent to INT PRIMARY KEY AUTO_INCREMENT
+    name = models.CharField(max_length=100)
+    phone_number = models.CharField(max_length=15)
+    email = models.EmailField(max_length=100)
+    number_of_people = models.IntegerField()
+    reservation_date = models.DateTimeField()
+
+    def __str__(self):
+        return f"Reservation for {self.name} on {self.reservation_date}"
+
+    class Meta:
+        db_table = 'ReservationTable'
