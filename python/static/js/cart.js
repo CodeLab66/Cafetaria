@@ -66,5 +66,6 @@ function updateCart() {
 
   document.getElementById("checkout-button").addEventListener("click", function () {
     window.location.href = "orderComplete.html";
+    clearCart();
 });
   
