@@ -75,72 +75,72 @@ VALUES
 -- Insert Menu Items
 -- Coffee
 INSERT INTO Menu (Name, Category, Price, AvailabilityStatus, ImagePath)
-VALUES ('Blonde Vanilla Latte', 'Coffee', 350.00, 'Available','image/Coffee/BlondeVanillaLatte.webp'),
-       ('Cafe au lait', 'Coffee', 300.00, 'Available','image/Coffee/CafeauLait.webp'),
-       ('Caffe Americano', 'Coffee', 400.00, 'Available','image/Coffee/CaffeAmericano.jpeg'),
-       ('Caffe Misto', 'Coffee', 320.00, 'Available','image/Coffee/CaffeMisto.jpeg'),
-       ('Caffe Mocha', 'Coffee', 420.00, 'Available','image/Coffee/CaffeMocha.webp'),
-       ('Cappuccino', 'Coffee',350.00, 'Available','image/Coffee/Cappuccino.webp'),
-       ('Classic Signature Chocolate', 'Coffee',380.00, 'Available','image/Coffee/Classic Signature Chocolate.webp'),
-       ('Golden Turmeric Latte', 'Coffee', 360.00, 'Available','image/Coffee/GoldenTurmericLatte.webp'),
-       ('Honey Almond', 'Coffee',390.00, 'Available','image/Coffee/HoneyAlmond.webp'),
-       ('Iced Brown Sugar Oat', 'Coffee', 400.00, 'Available','image/Coffee/IcedBrownSugarOat.webp'),
-       ('Iced Mocha', 'Coffee',410.00, 'Available','image/Coffee/IcedMocha.jpeg'),
-       ('Latte Macchiato', 'Coffee',370.00, 'Available','image/Coffee/LatteMacchiato.webp'),
-       ('Lavender Latte', 'Coffee',360.00, 'Available','image/Coffee/LavenderLatte.webp'),
-       ('Signature Chocolate Salted Caramel', 'Coffee',380.00, 'Available','image/Coffee/Signature Chocolate Salted Caramel.webp'),
-       ('Signature Chocolate Toasted Almond', 'Coffee',390.00, 'Available','image/Coffee/Signature Chocolate Toasted Almond.webp'),
-       ('Signature Chocolate Toasted Marshmallow', 'Coffee',420.00, 'Available','image/Coffee/Signature Chocolate Toasted Marshmallow.webp'),
-       ('Sparkling Mint', 'Coffee',350.00, 'Available','image/Coffee/SparklingMint.webp'),
-       ('Spiced Espresso', 'Coffee',370.00, 'Available','image/Coffee/SpicedEspresso.webp'),
-       ('Strawberry Latte', 'Coffee',360.00, 'Available','image/Coffee/StrawberryLatte.webp'),
-       ('Vanilla Latte', 'Coffee',390.00, 'Available','image/Coffee/VanillaLatte.webp');
+VALUES ('Blonde Vanilla Latte', 'Coffee', 350.00, 'Available','images/Coffee/BlondeVanillaLatte.webp'),
+       ('Cafe au lait', 'Coffee', 300.00, 'Available','images/Coffee/CafeauLait.webp'),
+       ('Caffe Americano', 'Coffee', 400.00, 'Available','images/Coffee/CaffeAmericano.jpeg'),
+       ('Caffe Misto', 'Coffee', 320.00, 'Available','images/Coffee/CaffeMisto.jpeg'),
+       ('Caffe Mocha', 'Coffee', 420.00, 'Available','images/Coffee/CaffeMocha.webp'),
+       ('Cappuccino', 'Coffee',350.00, 'Available','images/Coffee/Cappuccino.webp'),
+       ('Classic Signature Chocolate', 'Coffee',380.00, 'Available','images/Coffee/Classic Signature Chocolate.webp'),
+       ('Golden Turmeric Latte', 'Coffee', 360.00, 'Available','images/Coffee/GoldenTurmericLatte.webp'),
+       ('Honey Almond', 'Coffee',390.00, 'Available','images/Coffee/HoneyAlmond.webp'),
+       ('Iced Brown Sugar Oat', 'Coffee', 400.00, 'Available','images/Coffee/IcedBrownSugarOat.webp'),
+       ('Iced Mocha', 'Coffee',410.00, 'Available','images/Coffee/IcedMocha.jpeg'),
+       ('Latte Macchiato', 'Coffee',370.00, 'Available','images/Coffee/LatteMacchiato.webp'),
+       ('Lavender Latte', 'Coffee',360.00, 'Available','images/Coffee/LavenderLatte.webp'),
+       ('Signature Chocolate Salted Caramel', 'Coffee',380.00, 'Available','images/Coffee/Signature Chocolate Salted Caramel.webp'),
+       ('Signature Chocolate Toasted Almond', 'Coffee',390.00, 'Available','images/Coffee/Signature Chocolate Toasted Almond.webp'),
+       ('Signature Chocolate Toasted Marshmallow', 'Coffee',420.00, 'Available','images/Coffee/Signature Chocolate Toasted Marshmallow.webp'),
+       ('Sparkling Mint', 'Coffee',350.00, 'Available','images/Coffee/SparklingMint.webp'),
+       ('Spiced Espresso', 'Coffee',370.00, 'Available','images/Coffee/SpicedEspresso.webp'),
+       ('Strawberry Latte', 'Coffee',360.00, 'Available','images/Coffee/StrawberryLatte.webp'),
+       ('Vanilla Latte', 'Coffee',390.00, 'Available','images/Coffee/VanillaLatte.webp');
 
 -- Tea
 INSERT INTO Menu (Name, Category, Price, AvailabilityStatus, ImagePath)
-VALUES ('Chai Latte', 'Tea',320.00, 'Available','image/Tea/ChaiLatte.avif'),
-       ('Chai Tea', 'Tea',300.00, 'Available','image/Tea/ChaiTea.jpeg'),
-       ('Chai Tea Latte','Tea', 340.00, 'Available','image/Tea/ChaiTeaLatte.jpeg'),
-       ('Iced Chai Latte', 'Tea',350.00, 'Available','image/Tea/IcedChaiLatte.jpeg'),
-       ('Iced Chai Tea Latte', 'Tea',330.00, 'Available','image/Tea/IcedChaiTeaLatte.jpeg'),
-       ('Iced Chai Tea Latte with Vanilla Ice Cream', 'Tea',370.00, 'Available','image/Tea/IcedChaiTeaLatteWithVanillaIceCream.jpeg'),
-       ('Iced Chai Tea Oat Latte', 'Tea',360.00, 'Available','image/Tea/IcedChaiTeaOatLatte.jpeg');
+VALUES ('Chai Latte', 'Tea',320.00, 'Available','images/Tea/ChaiLatte.avif'),
+       ('Chai Tea', 'Tea',300.00, 'Available','images/Tea/ChaiTea.jpeg'),
+       ('Chai Tea Latte','Tea', 340.00, 'Available','images/Tea/ChaiTeaLatte.jpeg'),
+       ('Iced Chai Latte', 'Tea',350.00, 'Available','images/Tea/IcedChaiLatte.jpeg'),
+       ('Iced Chai Tea Latte', 'Tea',330.00, 'Available','images/Tea/IcedChaiTeaLatte.jpeg'),
+       ('Iced Chai Tea Latte with Vanilla Ice Cream', 'Tea',370.00, 'Available','images/Tea/IcedChaiTeaLatteWithVanillaIceCream.jpeg'),
+       ('Iced Chai Tea Oat Latte', 'Tea',360.00, 'Available','images/Tea/IcedChaiTeaOatLatte.jpeg');
 
 -- Brewages
 INSERT INTO Menu (Name, Category, Price, AvailabilityStatus, ImagePath)
-VALUES ('Frozen Tropical Citrus Strawberry Energy Drink', 'Beverage',300.00, 'Available','image/Brewages/FrozenTropicalCitrusStrawberryEnergyDrink.jpeg'),
-       ('Melon Burst Energy Drink', 'Beverage',330.00, 'Available','image/Brewages/MelonBurstEnergyDrink.jpeg'),
-       ('Mango Dragon fruit Lemonade Refreshers', 'Beverage',320.00, 'Available','image/Brewages/MangoDragonfruitLemonadeRefreshers.jpeg'),
-       ('Pineapple Passion fruit Refreshers Lemonade', 'Beverage',340.00, 'Available','image/Brewages/PineapplePassionfruitRefreshersLemonade.jpeg'),
-       ('Strawberry Acai Lemonade Refreshers', 'Beverage',310.00, 'Available','image/Brewages/StrawberryAcaiLemonadeRefreshers.jpeg'),
-       ('Frozen Mango Dragon fruit Refresher Lemonade','Beverage', 340.00, 'Available','image/Brewages/FrozenMangoDragonfruitRefresherLemonade.jpeg'),
-       ('Frozen Pineapple Passion fruit Refresher Lemonade', 'Beverage',330.00, 'Available','image/Brewages/FrozenPineapplePassionfruitRefresherLemonade.jpeg'),
-       ('Frozen Strawberry Acai Refresher Lemonade', 'Beverage',350.00, 'Available','image/Brewages/FrozenStrawberryAcaiRefresherLemonade.jpeg'),
-       ('Tropical Citrus Energy Drink', 'Beverage',320.00, 'Available','image/Brewages/TropicalCitrusEnergyDrink.jpeg');
+VALUES ('Frozen Tropical Citrus Strawberry Energy Drink', 'Beverage',300.00, 'Available','images/Brewages/FrozenTropicalCitrusStrawberryEnergyDrink.jpeg'),
+       ('Melon Burst Energy Drink', 'Beverage',330.00, 'Available','images/Brewages/MelonBurstEnergyDrink.jpeg'),
+       ('Mango Dragon fruit Lemonade Refreshers', 'Beverage',320.00, 'Available','images/Brewages/MangoDragonfruitLemonadeRefreshers.jpeg'),
+       ('Pineapple Passion fruit Refreshers Lemonade', 'Beverage',340.00, 'Available','images/Brewages/PineapplePassionfruitRefreshersLemonade.jpeg'),
+       ('Strawberry Acai Lemonade Refreshers', 'Beverage',310.00, 'Available','images/Brewages/StrawberryAcaiLemonadeRefreshers.jpeg'),
+       ('Frozen Mango Dragon fruit Refresher Lemonade','Beverage', 340.00, 'Available','images/Brewages/FrozenMangoDragonfruitRefresherLemonade.jpeg'),
+       ('Frozen Pineapple Passion fruit Refresher Lemonade', 'Beverage',330.00, 'Available','images/Brewages/FrozenPineapplePassionfruitRefresherLemonade.jpeg'),
+       ('Frozen Strawberry Acai Refresher Lemonade', 'Beverage',350.00, 'Available','images/Brewages/FrozenStrawberryAcaiRefresherLemonade.jpeg'),
+       ('Tropical Citrus Energy Drink', 'Beverage',320.00, 'Available','images/Brewages/TropicalCitrusEnergyDrink.jpeg');
 
 -- Frappuccino
 INSERT INTO Menu (Name, Category, Price, AvailabilityStatus, ImagePath)
-VALUES ('Caramel Brule Frappuccino', 'Frappuccino',400.00, 'Available','image/Frappuccino/CaramelBruleFrappuccino.jpeg'),
-       ('Chai Tea Cream Frappuccino', 'Frappuccino',420.00, 'Available','image/Frappuccino/ChaiTeaCreamFrappuccino.jpeg'),
-       ('Java Chip Frappuccino', 'Frappuccino',450.00, 'Available','image/Frappuccino/JavaChipFrappuccino.jpeg'),
-       ('Matcha Green Tea Frappuccino', 'Frappuccino',460.00, 'Available','image/Frappuccino/MatchaGreenTeaFrappuccino.jpeg'),
-       ('Mocha Cookie Crumble Frappuccino', 'Frappuccino',470.00, 'Available','image/Frappuccino/MochaCookieCrumbleFrappuccino.jpeg'),
-       ('Peppermint White Chocolate Creme Frappuccino', 'Frappuccino',430.00, 'Available','image/Frappuccino/PeppermintWhiteChocolateCremeFrappuccino.jpeg'),
-       ('Peppermint White Chocolate Mocha Frappuccino', 'Frappuccino',440.00, 'Available','image/Frappuccino/PeppermintWhiteChocolateMochaFrappuccino.jpeg'),
-       ('Strawberry Frappuccino', 'Frappuccino',410.00, 'Available','image/Frappuccino/StrawberryFrappuccino.jpeg'),
-       ('White Chocolate Creme Frappuccino', 'Frappuccino',450.00, 'Available','image/Frappuccino/WhiteChocolateCremeFrappuccino.jpeg');
+VALUES ('Caramel Brule Frappuccino', 'Frappuccino',400.00, 'Available','images/Frappuccino/CaramelBruleFrappuccino.jpeg'),
+       ('Chai Tea Cream Frappuccino', 'Frappuccino',420.00, 'Available','images/Frappuccino/ChaiTeaCreamFrappuccino.jpeg'),
+       ('Java Chip Frappuccino', 'Frappuccino',450.00, 'Available','images/Frappuccino/JavaChipFrappuccino.jpeg'),
+       ('Matcha Green Tea Frappuccino', 'Frappuccino',460.00, 'Available','images/Frappuccino/MatchaGreenTeaFrappuccino.jpeg'),
+       ('Mocha Cookie Crumble Frappuccino', 'Frappuccino',470.00, 'Available','images/Frappuccino/MochaCookieCrumbleFrappuccino.jpeg'),
+       ('Peppermint White Chocolate Creme Frappuccino', 'Frappuccino',430.00, 'Available','images/Frappuccino/PeppermintWhiteChocolateCremeFrappuccino.jpeg'),
+       ('Peppermint White Chocolate Mocha Frappuccino', 'Frappuccino',440.00, 'Available','images/Frappuccino/PeppermintWhiteChocolateMochaFrappuccino.jpeg'),
+       ('Strawberry Frappuccino', 'Frappuccino',410.00, 'Available','images/Frappuccino/StrawberryFrappuccino.jpeg'),
+       ('White Chocolate Creme Frappuccino', 'Frappuccino',450.00, 'Available','images/Frappuccino/WhiteChocolateCremeFrappuccino.jpeg');
 
 -- Other Food Items
 INSERT INTO Menu (Name, Category, Price, AvailabilityStatus, ImagePath)
-VALUES ('Beef Burger','Burger', 550.00, 'Available','image/Burger/f2.png'),
-       ('Krunch Burger', 'Burger',400.00, 'Available','image/Burger/f7.png'),
-       ('Grilled Fillet Burger', 'Burger',600.00, 'Available','image/Burger/f8.png'),
-       ('Cheese Vegetable Pizza', 'Pizza',800.00, 'Available','image/CheeseVegetablePizza.png'),
-       ('Mint Margarita Pizza', 'Pizza',700.00, 'Available','image/Pizza/MintMargaretaPizza.png'),
-       ('Pepperoni Pizza', 'Pizza',850.00, 'Available','image/Pizza/PepperoniPizza.png'),
-       ('Macaroni Pasta', 'Pasta',500.00, 'Available','image/Pasta/f4.png'),
-       ('Alfredo Pasta', 'Pasta',600.00, 'Available','image/Pasta/f9.png'),
-       ('French Fries', 'Fries',200.00, 'Available','image/Fries/f5.png');
+VALUES ('Beef Burger','Burger', 550.00, 'Available','images/Burger/f2.png'),
+       ('Krunch Burger', 'Burger',400.00, 'Available','images/Burger/f7.png'),
+       ('Grilled Fillet Burger', 'Burger',600.00, 'Available','images/Burger/f8.png'),
+       ('Cheese Vegetable Pizza', 'Pizza',800.00, 'Available','images/CheeseVegetablePizza.png'),
+       ('Mint Margarita Pizza', 'Pizza',700.00, 'Available','images/Pizza/MintMargaretaPizza.png'),
+       ('Pepperoni Pizza', 'Pizza',850.00, 'Available','images/Pizza/PepperoniPizza.png'),
+       ('Macaroni Pasta', 'Pasta',500.00, 'Available','images/Pasta/f4.png'),
+       ('Alfredo Pasta', 'Pasta',600.00, 'Available','images/Pasta/f9.png'),
+       ('French Fries', 'Fries',200.00, 'Available','images/Fries/f5.png');
 
 
 -- Sample Orders
