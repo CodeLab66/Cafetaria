@@ -192,7 +192,7 @@
                             <div>
                                 <div class="img-box">
                                     <!-- Here you can set dynamic image URL if needed -->
-                                    <img src="{% static 'images/Menu/'|add:item.Category|add:'/'|add:item.ItemID|stringformat:"s"|add:'.jpeg' %}" alt="{{ item.Category }}">
+                                    <img src="{{ item.ImagePath.url }}" alt="{{ item.Name }}">
                                 </div>
                                 <div class="detail-box">
                                     <h5>{{ item.Name }}</h5>

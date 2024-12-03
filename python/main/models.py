@@ -62,6 +62,7 @@ class Menu(models.Model):
     Category = models.CharField(max_length=50)
     Price = models.DecimalField(max_digits=5, decimal_places=2)
     AvailabilityStatus = models.CharField(max_length=10)
+    ImagePath = models.ImageField(upload_to='images/')  # Automatically handles paths
 
     def __str__(self):
         return f"{self.Category} - {self.Price}"

@@ -23,8 +23,9 @@ class EmployeeAdmin(admin.ModelAdmin):
 
 
 class MenuAdmin(admin.ModelAdmin):
-    list_display = ('ItemID', 'Name' ,'Category', 'Price', 'AvailabilityStatus')
+    list_display = ('ItemID', 'Name' ,'Category', 'Price', 'AvailabilityStatus', 'ImagePath')
     search_fields = ('Category',)
+    list_editable = ('Name', 'Category', 'Price', 'AvailabilityStatus', 'ImagePath')
 
 
 class OrdersAdmin(admin.ModelAdmin):
