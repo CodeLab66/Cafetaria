@@ -114,16 +114,16 @@ VALUES ('Frozen Tropical Citrus Strawberry Energy Drink', 'Beverage',300.00, 'Av
        ('Tropical Citrus Energy Drink', 'Beverage',320.00, 'Available');
 
 -- Frappuccino
-INSERT INTO Menu (Category, Price, AvailabilityStatus)
-VALUES ('Caramel Brule Frappuccino', 400.00, 'Available'),
-       ('Chai Tea Cream Frappuccino', 420.00, 'Available'),
-       ('Java Chip Frappuccino', 450.00, 'Available'),
-       ('Matcha Green Tea Frappuccino', 460.00, 'Available'),
-       ('Mocha Cookie Crumble Frappuccino', 470.00, 'Available'),
-       ('Peppermint White Chocolate Creme Frappuccino', 430.00, 'Available'),
-       ('Peppermint White Chocolate Mocha Frappuccino', 440.00, 'Available'),
-       ('Strawberry Frappuccino', 410.00, 'Available'),
-       ('White Chocolate Creme Frappuccino', 450.00, 'Available');
+INSERT INTO Menu (Name, Category, Price, AvailabilityStatus)
+VALUES ('Caramel Brule Frappuccino', 'Frappuccino',400.00, 'Available'),
+       ('Chai Tea Cream Frappuccino', 'Frappuccino',420.00, 'Available'),
+       ('Java Chip Frappuccino', 'Frappuccino',450.00, 'Available'),
+       ('Matcha Green Tea Frappuccino', 'Frappuccino',460.00, 'Available'),
+       ('Mocha Cookie Crumble Frappuccino', 'Frappuccino',470.00, 'Available'),
+       ('Peppermint White Chocolate Creme Frappuccino', 'Frappuccino',430.00, 'Available'),
+       ('Peppermint White Chocolate Mocha Frappuccino', 'Frappuccino',440.00, 'Available'),
+       ('Strawberry Frappuccino', 'Frappuccino',410.00, 'Available'),
+       ('White Chocolate Creme Frappuccino', 'Frappuccino',450.00, 'Available');
 
 -- Other Food Items
 INSERT INTO Menu (Name, Category, Price, AvailabilityStatus)
