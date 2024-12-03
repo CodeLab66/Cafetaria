@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,14 +7,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cart - Your Shopping Cart</title>
-  <link rel="stylesheet" href="../css/bootstrap.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/cart.css">
+  <link rel="stylesheet" type = "text/css" href="{% static 'css/bootstrap.css' %}">
+  <link rel="stylesheet" type = "text/css" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" type = "text/css" href="{% static 'css/cart.css' %}">
 </head>
 
 <body>
   <!-- Back Button -->
-  <a href="../index.html" class="btn btn-secondary back-btn">Back to Home</a>
+  <a href="{% url 'index' %}" class="btn btn-secondary back-btn">Back to Home</a>
 
   <!-- Cart Banner Section -->
   <section class="cart-banner">
@@ -42,7 +44,7 @@
 
       <!-- Cart Total Section -->
       <div id="cart-total">
-        <h4>Total: $<span id="total-price">0.00</span></h4>
+        <h4>Total: Rs<span id="total-price">0.00</span></h4>
       </div>
 
       <!-- Buttons Section -->
@@ -58,8 +60,8 @@
     <p>&copy; 2024 Your Coffee Shop. All Rights Reserved.</p>
   </footer>
 
-  <script src="../js/cart.js"></script>
-  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="{% static 'js/cart.js' %}"></script>
+  <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
 </body>
 
 </html>
