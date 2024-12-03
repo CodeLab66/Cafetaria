@@ -140,7 +140,7 @@ VALUES ('Beef Burger','Burger', 550.00, 'Available','image/Burger/f2.png'),
        ('Pepperoni Pizza', 'Pizza',850.00, 'Available','image/Pizza/PepperoniPizza.png'),
        ('Macaroni Pasta', 'Pasta',500.00, 'Available','image/Pasta/f4.png'),
        ('Alfredo Pasta', 'Pasta',600.00, 'Available','image/Pasta/f9.png'),
-       ('French Fries', 'Fries',200.00, 'Available','image/Fries/f5.png'),;
+       ('French Fries', 'Fries',200.00, 'Available','image/Fries/f5.png');
 
 
 -- Sample Orders
