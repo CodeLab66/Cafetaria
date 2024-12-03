@@ -10,4 +10,6 @@ urlpatterns = [
     path('book/', views.book_view, name='book'),      # Link to book.html
     path('cart/', views.cart_view, name='cart'),      # Link to cart.html
     path('menu/', views.menu_view, name='menu'),   
+    # path('reservations/', views.reservation_list, name='reservation_list'),
+    # path('create_reservation/', views.create_reservation, name='create_reservation'),
 ]
