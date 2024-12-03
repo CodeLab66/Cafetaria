@@ -77,6 +77,8 @@ def menu_view(request):
     menu_items = Menu.objects.all()
     return render(request, 'menu.html', {'menu_items': menu_items})   # Render cart.html
 
+def order_complete(request):
+    return render(request, 'orderComplete.html')   # Render cart.html
 # def reservation_list(request):
 #     reservations = Reservation.objects.all()
 #     return render(request, 'reservation_list.html', {'reservations': reservations})

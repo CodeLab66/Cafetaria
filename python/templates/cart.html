@@ -50,7 +50,7 @@
       <!-- Buttons Section -->
       <div class="d-flex justify-content-between">
         <button id="clear-cart" class="btn btn-danger">Clear Cart</button>
-        <button id="checkout-button" class="btn btn-primary">Proceed to Checkout</button>
+        <button id="checkout-button" class="btn btn-primary">Proceed to Checkout</button> 
       </div>
     </div>
   </section>
@@ -62,6 +62,13 @@
 
   <script src="{% static 'js/cart.js' %}"></script>
   <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+  <script>
+    // Attach a click event listener to the button
+    document.getElementById("checkout-button").addEventListener("click", function () {
+        // Redirect to orderComplete.html
+        window.location.href = "{% url 'orderComplete' %}";
+    });
+  </script>
 </body>
 
 </html>
