@@ -88,3 +88,12 @@ CREATE TABLE Delivery (
     FOREIGN KEY (OrderID) REFERENCES Orders(OrderID),
     FOREIGN KEY (BranchID) REFERENCES Branch(BranchID)
 );	
+
+create Table ReservationTable (
+    ReservationID INT PRIMARY KEY AUTO_INCREMENT,
+    Name VARCHAR(100) NOT NULL,
+    PhoneNumber VARCHAR(15) NOT NULL,
+    Email VARCHAR(100) NOT NULL,
+    NumberOfPeople INT NOT NULL,
+    ReservationDate DATETIME NOT NULL,
+);
