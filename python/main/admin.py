@@ -23,7 +23,7 @@ class EmployeeAdmin(admin.ModelAdmin):
 
 
 class MenuAdmin(admin.ModelAdmin):
-    list_display = ('ItemID', 'Category', 'Price', 'AvailabilityStatus')
+    list_display = ('ItemID', 'Name' ,'Category', 'Price', 'AvailabilityStatus')
     search_fields = ('Category',)
 
 
