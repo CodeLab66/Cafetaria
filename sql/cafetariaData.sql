@@ -166,3 +166,8 @@ VALUES ('ali_khan', 1, 4, 'Great coffee and quick service!'),
        ('sara_ali', 3, 3, 'Good, but the pasta was cold.'),
        ('usman_tariq', 4, 5, 'Amazing frappuccino!');
 
+INSERT INTO ReservationTable (Name, PhoneNumber, Email, NumberOfPeople, ReservationDate)
+VALUES ('Ali Khan', '03011223344','ali_khan@example.com', 2, '2024-11-10'),
+       ('Ayesha Zafar', '03122334455', 'ayesha.zafar@example.com', 4, '2024-11-11'),
+
+       
