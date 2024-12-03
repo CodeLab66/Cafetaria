@@ -44,7 +44,7 @@ CREATE TABLE Menu (
     Name VARCHAR(50),
     Category VARCHAR(50),
     Price DECIMAL(5, 2),
-    AvailabilityStatus VARCHAR(10)
+    AvailabilityStatus VARCHAR(10),
     ImagePath VARCHAR(255) NOT NULL
 );
 
