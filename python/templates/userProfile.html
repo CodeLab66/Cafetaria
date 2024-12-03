@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .profile-container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px 30px;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .profile-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: brown;
+        }
+
+        .profile-field {
+            margin-bottom: 15px;
+        }
+
+        .profile-field span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .profile-field p {
+            margin: 5px 0 0;
+            color: #555;
+        }
+
+        .profile-img {
+            display: block;
+            margin: 0 auto 20px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <h2>User Profile</h2>
+        <!-- Profile Image -->
+        <img src="https://via.placeholder.com/100" alt="User Image" class="profile-img">
+
+        <div class="profile-field">
+            <span>Name:</span>
+            <p>John Doe</p>
+        </div>
+        <div class="profile-field">
+            <span>Phone Number:</span>
+            <p>+123-456-7890</p>
+        </div>
+        <div class="profile-field">
+            <span>Email:</span>
+            <p>johndoe@example.com</p>
+        </div>
+        <div class="profile-field">
+            <span>Gender:</span>
+            <p>Male</p>
+        </div>
+        <div class="profile-field">
+            <span>Address:</span>
+            <p>123 Main Street, Springfield</p>
+        </div>
+        <div class="profile-field">
+            <span>Number of Orders:</span>
+            <p>25</p>
+        </div>
+    </div>
+</body>
+</html>
