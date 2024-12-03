@@ -195,7 +195,7 @@
                                     <img src="{% static 'images/Menu/'|add:item.Category|add:'/'|add:item.ItemID|stringformat:"s"|add:'.jpeg' %}" alt="{{ item.Category }}">
                                 </div>
                                 <div class="detail-box">
-                                    <h5>{{ item.Category }}</h5>
+                                    <h5>{{ item.Name }}</h5>
                                     <p>
                                         <!-- You can add a description from the database if you have one -->
                                         {{ item.AvailabilityStatus }}

@@ -71,7 +71,7 @@
             word-wrap: break-word;
         }
 
-        .ok-btn {
+        #ok-btn {
             background-color: brown;
             color: white;
             border: none;
@@ -82,7 +82,7 @@
             transition: background-color 0.3s ease;
         }
 
-        .ok-btn:hover {
+        #ok-btn:hover {
             background-color: #5a2a00;
         }
 
@@ -112,7 +112,8 @@
                 font-size: 14px;
             }
 
-            .ok-btn {
+            
+            #ok-btn {
                 font-size: 12px;
                 padding: 8px 16px;
             }
@@ -126,9 +127,17 @@
                 <div class="circle"></div>
                 <div class="checkmark">&#10003;</div>
             </div>
-            <p>Your has been placed and will be deliveried soon.</p>
-            <button class="ok-btn">OK</button>
+            <p>Thanks for Ordering!<br> Your Order has been placed and will be deliveried soon.</p>
+            <button id="ok-btn">OK</button>
         </div>
     </div>
+    <script>
+        // Attach a click event listener to the button
+        document.getElementById("ok-btn").addEventListener("click", function () {
+
+            window.location.href = "{% url 'index' %}";
+        });
+      </script>
 </body>
 </html>
+

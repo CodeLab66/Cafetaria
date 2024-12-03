@@ -58,6 +58,7 @@ class Employee(models.Model):
 
 class Menu(models.Model):
     ItemID = models.AutoField(primary_key=True)
+    Name = models.CharField(max_length=50)
     Category = models.CharField(max_length=50)
     Price = models.DecimalField(max_digits=5, decimal_places=2)
     AvailabilityStatus = models.CharField(max_length=10)
