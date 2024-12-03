@@ -50,9 +50,11 @@ def about(request):
 # def index(request):
 #     return render(request, 'index.html')
 
+from .models import Menu
 
 def index(request):
-    return render(request, 'index.html')  # Renders the index page
+    menu_items = Menu.objects.all()
+    return render(request, 'index.html', {'menu_items': menu_items})   
 
 def signup(request):
     return render(request, 'signup.html')  # Renders the signup page
@@ -68,3 +70,7 @@ def book_view(request):
 
 def cart_view(request):
     return render(request, 'cart.html')   # Render cart.html
+
+def menu_view(request):
+    menu_items = Menu.objects.all()
+    return render(request, 'menu.html', {'menu_items': menu_items})   # Render cart.html
