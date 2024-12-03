@@ -1,0 +1,1479 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  
+  <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="image/png">
+
+  <title> Cafetaria </title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
+
+  <!-- Owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  
+  <!-- Nice select -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ==" crossorigin="anonymous" />
+  
+  <!-- Font Awesome style -->
+  <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+  <link rel="stylesheet" href="{% static 'css/add-to-cart.css' %}">
+
+  <!-- Responsive style -->
+  <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
+</head>
+
+
+<body>
+
+  <div class="hero_area">
+    <div class="bg-box">
+      <img src="images/hero-bg.jpg" alt="">
+    </div>
+    <!-- header section strats -->
+    
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              Cafetaria
+            </span>
+          </a>
+    
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="html/menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="html/about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="html/book.html">Book Table</a>
+              </li>
+            </ul>
+            <div class="user_option">
+              <a href="html/login.html" class="user_link">
+                <i class="fa fa-user" aria-hidden="true"></i>
+              </a>
+              <a class="cart_link" href="html/cart.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bag-plus-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0M8.5 8a.5.5 0 0 0-1 0v1.5H6a.5.5 0 0 0 0 1h1.5V12a.5.5 0 0 0 1 0v-1.5H10a.5.5 0 0 0 0-1H8.5z" />
+                </svg>
+                <span id="cart-count" class="badge badge-danger">0</span>
+              </a>
+              <span id="cart-total" class="cart-total-price">$0.00</span>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    
+    <!-- end header section -->
+    
+    <!-- slider section -->
+    
+    <section class="slider_section ">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-7 col-lg-6 ">
+                  <div class="detail-box">
+                    <h1>
+                      Coffee Shop & Restaurant
+                    </h1>
+                    <p>
+                      Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-7 col-lg-6 ">
+                  <div class="detail-box">
+                    <h1>
+                      Coffee Shop & Restaurant
+                    </h1>
+                    <p>
+                      Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-7 col-lg-6 ">
+                  <div class="detail-box">
+                    <h1>
+                      Coffee Shop & Restaurant
+                    </h1>
+                    <p>
+                      Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <ol class="carousel-indicators">
+            <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
+            <li data-target="#customCarousel1" data-slide-to="1"></li>
+            <li data-target="#customCarousel1" data-slide-to="2"></li>
+          </ol>
+        </div>
+      </div>
+
+    </section>
+    
+    <!-- end slider section -->
+  </div>
+
+
+  <!-- food section -->
+
+  <section class="food_section layout_padding-bottom">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Our Menu
+        </h2>
+      </div>
+
+      <ul class="filters_menu">
+        <li class="active" data-filter="*">All</li>
+        <li data-filter=".coffee">Coffee</li>
+        <li data-filter=".tea">Tea</li>
+        <li data-filter=".frappuccino">Frappuccino</li>
+        <li data-filter=".bewerage">Bewerage</li>
+        <li data-filter=".pizza">Pizza</li>
+        <li data-filter=".burger">Burger</li>
+        <li data-filter=".pasta">Pasta</li>
+        <li data-filter=".fries">Fries</li>
+      </ul>
+
+      <div class="filters-content">
+        <div class="row grid">
+          <div class="col-sm-6 col-lg-4 all coffee">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/Coffee/CaffeAmericano.jpeg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Caffe Americano 
+                  </h5>
+                  <p>
+                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                  </p>
+                  <div class="options">
+                    <h6>
+                      $2
+                    </h6>
+                    <a href="javascript:void(0)" class="add-to-cart-button" data-item-name="Caffe Americano" data-item-price="2.00">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                        <image href="images/add-to-cart.png" width="456.029" height="456.029" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-lg-4 all coffee">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/Coffee/IcedMocha.jpeg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Iced Mocha
+                  </h5>
+                  <p>
+                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                  </p>
+                  <div class="options">
+                    <h6>
+                      $4
+                    </h6>
+                    <a href="javascript:void(0)" class="add-to-cart-button" data-item-name="Iced Mocha" data-item-price="4.00">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                        <image href="images/add-to-cart.png" width="456.029" height="456.029" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-lg-4 all tea">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/Tea/ChaiLatte.avif" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Chai Latte
+                  </h5>
+                  <p>
+                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                  </p>
+                  <div class="options">
+                    <h6>
+                      $5
+                    </h6>
+                    <a href="javascript:void(0)" class="add-to-cart-button" data-item-name="Chai Latte" data-item-price="5.00">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                        <image href="images/add-to-cart.png" width="456.029" height="456.029" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-lg-4 all frappuccino">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/Frappuccino/CaramelBruleeFrappuccino.jpeg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Caramel Brulee Frappuccino
+                  </h5>
+                  <p>
+                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                  </p>
+                  <div class="options">
+                    <h6>
+                      $6
+                    </h6>
+                    <a href="javascript:void(0)" class="add-to-cart-button" data-item-name="Caramel Brulee Frappuccino" data-item-price="6.00">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                        <image href="images/add-to-cart.png" width="456.029" height="456.029" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-lg-4 all pizza">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/Pizza/CheeseVegatablePizza.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Cheese Vegatable Pizza
+                  </h5>
+                  <p>
+                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                  </p>
+                  <div class="options">
+                    <h6>
+                      $15
+                    </h6>
+                    <a href="javascript:void(0)" class="add-to-cart-button" data-item-name="Cheese Vegatable Pizza" data-item-price="15.00">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                        <image href="images/add-to-cart.png" width="456.029" height="456.029" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-lg-4 all coffee">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/Coffee/Cappuccino.webp" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Cappuccino
+                  </h5>
+                  <p>
+                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                  </p>
+                  <div class="options">
+                    <h6>
+                      $4
+                    </h6>
+                    <a href="javascript:void(0)" class="add-to-cart-button" data-item-name="Cappuccino" data-item-price="4.00">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                        <image href="images/add-to-cart.png" width="456.029" height="456.029" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-lg-4 all burger">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/Burger/f2.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Beef Burger
+                  </h5>
+                  <p>
+                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                  </p>
+                  <div class="options">
+                    <h6>
+                      $12
+                    </h6>
+                    <a href="javascript:void(0)" class="add-to-cart-button" data-item-name="Beef Burger" data-item-price="12.00">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                        <image href="images/add-to-cart.png" width="456.029" height="456.029" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-lg-4 all bewerage">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/Brewages/TropicalCitrusEnergyDrink.jpeg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Tropical Citrus Energy Drink
+                  </h5>
+                  <p>
+                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                  </p>
+                  <div class="options">
+                    <h6>
+                      $5
+                    </h6>
+                    <a href="javascript:void(0)" class="add-to-cart-button" data-item-name="Tropical Citrus Energy Drink" data-item-price="5.00">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                        <image href="images/add-to-cart.png" width="456.029" height="456.029" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>          
+          <div class="col-sm-6 col-lg-4 all tea">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/Tea/ChaiTea.jpeg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Chai Tea
+                  </h5>
+                  <p>
+                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                  </p>
+                  <div class="options">
+                    <h6>
+                      $2
+                    </h6>
+                    <a href="javascript:void(0)" class="add-to-cart-button" data-item-name="Chai Tea" data-item-price="2.00">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                        <image href="images/add-to-cart.png" width="456.029" height="456.029" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-lg-4 all pizza">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/Pizza/MintMargaretaPizza.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Mint Margareta Pizza
+                  </h5>
+                  <p>
+                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                  </p>
+                  <div class="options">
+                    <h6>
+                      $15
+                    </h6>
+                    <a href="javascript:void(0)" class="add-to-cart-button" data-item-name="Mint Margareta Pizza" data-item-price="15.00">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                        <image href="images/add-to-cart.png" width="456.029" height="456.029" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-lg-4 all frappuccino">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/Frappuccino/ChaiTeaCreamFrappucino.jpeg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Chai Tea Cream Frappuccino
+                  </h5>
+                  <p>
+                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                  </p>
+                  <div class="options">
+                    <h6>
+                      $6
+                    </h6>
+                    <a href="javascript:void(0)" class="add-to-cart-button" data-item-name="Chai Tea Cream Frappuccino" data-item-price="6.00">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                        <image href="images/add-to-cart.png" width="456.029" height="456.029" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-lg-4 all bewerage">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/Brewages/FrozenMangoDragonfruitRefresherLemonade.jpeg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Frozen Mango Dragonfruit Refresher Lemonade
+                  </h5>
+                  <p>
+                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit
+                  </p>
+                  <div class="options">
+                    <h6>
+                      $5
+                    </h6>
+                    <a href="javascript:void(0)" class="add-to-cart-button" data-item-name="Frozen Mango Dragonfruit Refresher Lemonade" data-item-price="5.00">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                        <image href="images/add-to-cart.png" width="456.029" height="456.029" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-lg-4 all bewerage">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/Brewages/FrozenPineapplePassionfruitRefresherLemonade.jpeg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Frozen Pineapple Passionfruit Refresher Lemonade
+                  </h5>
+                  <p>
+                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit
+                  </p>
+                  <div class="options">
+                    <h6>
+                      $5
+                    </h6>
+                    <a href="javascript:void(0)" class="add-to-cart-button" data-item-name="Frozen Pineapple Passionfruit Refresher Lemonade" data-item-price="5.00">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                        <image href="images/add-to-cart.png" width="456.029" height="456.029" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-lg-4 all pasta">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/Pasta/f4.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Macaroni Pasta
+                  </h5>
+                  <p>
+                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                  </p>
+                  <div class="options">
+                    <h6>
+                      $11
+                    </h6>
+                    <a href="javascript:void(0)" class="add-to-cart-button" data-item-name="Macaroni" data-item-price="11.00">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                        <image href="images/add-to-cart.png" width="456.029" height="456.029" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-lg-4 all fries">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/Fries/f5.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    French Fries
+                  </h5>
+                  <p>
+                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                  </p>
+                  <div class="options">
+                    <h6>
+                      $5
+                    </h6>
+                    <a href="javascript:void(0)" class="add-to-cart-button" data-item-name="Fries" data-item-price="5.00">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                        <image href="images/add-to-cart.png" width="456.029" height="456.029" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-lg-4 all bewerage">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/Brewages/FrozenStrawberryAcaiRefresherLemonade.jpeg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Frozen Strawberry Acai Refresher Lemonade
+                  </h5>
+                  <p>
+                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit
+                  </p>
+                  <div class="options">
+                    <h6>
+                      $5
+                    </h6>
+                    <a href="javascript:void(0)" class="add-to-cart-button" data-item-name="Frozen Strawberry Acai Refresher Lemonade" data-item-price="5.00">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                        <image href="images/add-to-cart.png" width="456.029" height="456.029" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>          
+          <div class="col-sm-6 col-lg-4 all coffee">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/Coffee/BlondeVanillaLatte.webp" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Blonde Vanilla Latte
+                  </h5>
+                  <p>
+                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                  </p>
+                  <div class="options">
+                    <h6>
+                      $8
+                    </h6>
+                    <a href="javascript:void(0)" class="add-to-cart-button" data-item-name="Blonde Vanilla Latte" data-item-price="8.00">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                        <image href="images/add-to-cart.png" width="456.029" height="456.029" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-lg-4 all bewerage">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/Brewages/MangoDragonfruitLemonadeRefreshers.jpeg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Mango Dragonfruit Lemonade Refreshers
+                  </h5>
+                  <p>
+                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit
+                  </p>
+                  <div class="options">
+                    <h6>
+                      $5
+                    </h6>
+                    <a href="javascript:void(0)" class="add-to-cart-button" data-item-name="Mango Dragonfruit Lemonade Refreshers" data-item-price="5.00">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                        <image href="images/add-to-cart.png" width="456.029" height="456.029" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-lg-4 all coffee">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/Coffee/Cafeaulait.webp" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Cafe Au Lait
+                  </h5>
+                  <p>
+                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                  </p>
+                  <div class="options">
+                    <h6>
+                      $7
+                    </h6>
+                    <a href="javascript:void(0)" class="add-to-cart-button" data-item-name="Cafe Au Lait" data-item-price="7.00">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                        <image href="images/add-to-cart.png" width="456.029" height="456.029" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-lg-4 all frappuccino">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/Frappuccino/MatchaGreenTeaFrappuccino.jpeg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Match Green Tea Frappuccino
+                  </h5>
+                  <p>
+                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                  </p>
+                  <div class="options">
+                    <h6>
+                      $6
+                    </h6>
+                    <a href="javascript:void(0)" class="add-to-cart-button" data-item-name="Match Green Tea Frappuccino" data-item-price="6.00">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                        <image href="images/add-to-cart.png" width="456.029" height="456.029" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-lg-4 all bewerage">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/Brewages/MelonBurstEnergyDrink.jpeg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Melon Burst Energy Drink
+                  </h5>
+                  <p>
+                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit Lorem ipsum dolor sit amet.
+                  </p>
+                  <div class="options">
+                    <h6>
+                      $5
+                    </h6>
+                    <a href="javascript:void(0)" class="add-to-cart-button" data-item-name="Melon Burst Energy Drink" data-item-price="5.00">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                        <image href="images/add-to-cart.png" width="456.029" height="456.029" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-lg-4 all frappuccino">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/Frappuccino/MochaCookieCrumbleFrappuccino.jpeg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Mocha Cookie Crumble Frappuccino
+                  </h5>
+                  <p>
+                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit
+                  </p>
+                  <div class="options">
+                    <h6>
+                      $6
+                    </h6>
+                    <a href="javascript:void(0)" class="add-to-cart-button" data-item-name="Mocha Cookie Crumble Frappuccino" data-item-price="6.00">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                        <image href="images/add-to-cart.png" width="456.029" height="456.029" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-lg-4 all coffee">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/Coffee/CaffeMisto.jpeg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Caffe Misto
+                  </h5>
+                  <p>
+                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                  </p>
+                  <div class="options">
+                    <h6>
+                      $6
+                    </h6>
+                    <a href="javascript:void(0)" class="add-to-cart-button" data-item-name="Caffe Misto" data-item-price="6.00">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                        <image href="images/add-to-cart.png" width="456.029" height="456.029" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all coffee">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/Coffee/BlondeVanillaLatte.webp" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>Blonde Vanilla Latte</h5>
+                  <p>
+                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                  </p>
+                  <div class="options">
+                    <h6>$8</h6>
+                    <a href="javascript:void(0)" class="add-to-cart-button" data-item-name="Blonde Vanilla Latte" data-item-price="8.00">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                        <image href="images/add-to-cart.png" width="456.029" height="456.029" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-lg-4 all bewerage">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/Brewages/MangoDragonfruitLemonadeRefreshers.jpeg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>Mango Dragonfruit Lemonade Refreshers</h5>
+                  <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit</p>
+                  <div class="options">
+                    <h6>$5</h6>
+                    <a href="javascript:void(0)" class="add-to-cart-button" data-item-name="Mango Dragonfruit Lemonade Refreshers" data-item-price="5.00">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                        <image href="images/add-to-cart.png" width="456.029" height="456.029" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-lg-4 all coffee">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/Coffee/Cafeaulait.webp" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>Cafe Au Lait</h5>
+                  <p>
+                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                  </p>
+                  <div class="options">
+                    <h6>$7</h6>
+                    <a href="javascript:void(0)" class="add-to-cart-button" data-item-name="Cafe Au Lait" data-item-price="7.00">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                        <image href="images/add-to-cart.png" width="456.029" height="456.029" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-lg-4 all frappuccino">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/Frappuccino/MatchaGreenTeaFrappuccino.jpeg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>Match Green Tea Frappuccino</h5>
+                  <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+                  <div class="options">
+                    <h6>$6</h6>
+                    <a href="javascript:void(0)" class="add-to-cart-button" data-item-name="Match Green Tea Frappuccino" data-item-price="6.00">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                        <image href="images/add-to-cart.png" width="456.029" height="456.029" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-lg-4 all bewerage">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/Brewages/MelonBurstEnergyDrink.jpeg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>Melon Burst Energy Drink</h5>
+                  <p>
+                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit Lorem ipsum dolor sit amet.
+                  </p>
+                  <div class="options">
+                    <h6>$5</h6>
+                    <a href="javascript:void(0)" class="add-to-cart-button" data-item-name="Melon Burst Energy Drink" data-item-price="5.00">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                        <image href="images/add-to-cart.png" width="456.029" height="456.029" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-lg-4 all frappuccino">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/Frappuccino/MochaCookieCrumbleFrappuccino.jpeg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>Mocha Cookie Crumble Frappuccino</h5>
+                  <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit</p>
+                  <div class="options">
+                    <h6>$6</h6>
+                    <a href="javascript:void(0)" class="add-to-cart-button" data-item-name="Mocha Cookie Crumble Frappuccino" data-item-price="6.00">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                        <image href="images/add-to-cart.png" width="456.029" height="456.029" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>          
+          <div class="col-sm-6 col-lg-4 all frappuccino">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/Frappuccino/StrawberryFrappuccino.jpeg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>Strawberry Frappuccino</h5>
+                  <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit Lorem ipsum dolor sit amet.</p>
+                  <div class="options">
+                    <h6>$6</h6>
+                    <a href="javascript:void(0)" class="add-to-cart-button" data-item-name="Strawberry Frappuccino" data-item-price="6.00">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                        <image href="images/add-to-cart.png" width="456.029" height="456.029" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-lg-4 all coffee">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/Coffee/GoldenTurmericLatte.webp" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>Golden Turmeric Latte</h5>
+                  <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+                  <div class="options">
+                    <h6>$7</h6>
+                    <a href="javascript:void(0)" class="add-to-cart-button" data-item-name="Golden Turmeric Latte" data-item-price="7.00">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                        <image href="images/add-to-cart.png" width="456.029" height="456.029" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-lg-4 all coffee">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/Coffee/HoneyAlmond.webp" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>Honey Almond</h5>
+                  <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+                  <div class="options">
+                    <h6>$8</h6>
+                    <a href="javascript:void(0)" class="add-to-cart-button" data-item-name="Honey Almond" data-item-price="8.00">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                        <image href="images/add-to-cart.png" width="456.029" height="456.029" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-lg-4 all coffee">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/Coffee/IcedBrownSugarOat.webp" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>Iced Brown Sugar Oat</h5>
+                  <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+                  <div class="options">
+                    <h6>$8</h6>
+                    <a href="javascript:void(0)" class="add-to-cart-button" data-item-name="Iced Brown Sugar Oat" data-item-price="8.00">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                        <image href="images/add-to-cart.png" width="456.029" height="456.029" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-lg-4 all tea">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/Tea/IcedChaiLatte.jpeg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>Iced Chai Latte</h5>
+                  <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+                  <div class="options">
+                    <h6>$8</h6>
+                    <a href="javascript:void(0)" class="add-to-cart-button" data-item-name="Iced Chai Latte" data-item-price="8.00">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                        <image href="images/add-to-cart.png" width="456.029" height="456.029" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-lg-4 all tea">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/Tea/IcedChaiTeaLatte.jpeg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>Iced Chai Tea Latte</h5>
+                  <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+                  <div class="options">
+                    <h6>$8</h6>
+                    <a href="javascript:void(0)" class="add-to-cart-button" data-item-name="Iced Chai Tea Latte" data-item-price="8.00">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                        <image href="images/add-to-cart.png" width="456.029" height="456.029" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-lg-4 all tea">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/Tea/IcedChaiTeaLatteWithVanillaIceCream.jpeg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>Iced Chai Tea Latte with Vanilla IceCream</h5>
+                  <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit</p>
+                  <div class="options">
+                    <h6>$9</h6>
+                    <a href="javascript:void(0)" class="add-to-cart-button" data-item-name="Iced Chai Tea Latte with Vanilla IceCream" data-item-price="9.00">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                        <image href="images/add-to-cart.png" width="456.029" height="456.029" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-lg-4 all coffee">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/Coffee/IcedMocha.jpeg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>Iced Mocha</h5>
+                  <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+                  <div class="options">
+                    <h6>$7</h6>
+                    <a href="javascript:void(0)" class="add-to-cart-button" data-item-name="Iced Mocha" data-item-price="7.00">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                        <image href="images/add-to-cart.png" width="456.029" height="456.029" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all tea">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/Tea/IcedChaiTeeOatLatte.jpeg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>Iced Chai Tee Oat Latte</h5>
+                  <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+                  <div class="options">
+                    <h6>$7</h6>
+                    <a href="javascript:void(0)" class="add-to-cart-button" data-item-name="Iced Chai Tee Oat Latte" data-item-price="7.00">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                        <image href="images/add-to-cart.png" width="456.029" height="456.029" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>                    
+      <!-- <div class="btn-box">
+        <a href="">
+          View More
+        </a>
+      </div> -->
+    </div>
+  </section>
+
+  <!-- end food section -->
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding">
+    <div class="container  ">
+
+      <div class="row">
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img src="images/about-img-removebg.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                We Are Cafetaria
+              </h2>
+            </div>
+            <p>
+              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+              in some form, by injected humour, or randomised words which don't look even slightly believable. If you
+              are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
+              the middle of text. All
+            </p>
+            <!-- <a href="">
+              Read More
+            </a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+  <!-- book section -->
+  <section class="book_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Book A Table
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form_container">
+            <form action="">
+              <div>
+                <input type="text" class="form-control" placeholder="Your Name" />
+              </div>
+              <div>
+                <input type="text" class="form-control" placeholder="Phone Number" />
+              </div>
+              <div>
+                <input type="email" class="form-control" placeholder="Your Email" />
+              </div>
+              <div>
+                <select class="form-control nice-select wide">
+                  <option value="" disabled selected>
+                    How many persons?
+                  </option>
+                  <option value="">
+                    2
+                  </option>
+                  <option value="">
+                    3
+                  </option>
+                  <option value="">
+                    4
+                  </option>
+                  <option value="">
+                    5
+                  </option>
+                  <option value="">
+                    6
+                  </option>
+                  <option value="">
+                    7
+                  </option>
+                  <option value="">
+                    8
+                  </option>
+                </select>
+              </div>
+              <div>
+                <input type="date" class="form-control">
+              </div>
+              <div class="btn_box">
+                <button>
+                  Book Now
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="map_container ">
+            <div id="googleMap"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end book section -->
+
+  <!-- client section -->
+
+  <section class="client_section layout_padding-bottom">
+    <div class="container">
+      <div class="heading_container heading_center psudo_white_primary mb_45">
+        <h2>
+          What Says Our Customers
+        </h2>
+      </div>
+      <div class="carousel-wrap row ">
+        <div class="owl-carousel client_owl-carousel">
+          <div class="item">
+            <div class="box">
+              <div class="detail-box">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                </p>
+                <h6>
+                  Adil
+                </h6>
+                <p>
+                  Theta
+                </p>
+              </div>
+              <div class="img-box">
+                <img src="images/Review/adil.jpg" alt="" class="box-img">
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="detail-box">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                </p>
+                <h6>
+                  Bilal
+                </h6>
+                <p>
+                  Student
+                </p>
+              </div>
+              <div class="img-box">
+                <img src="images/Review/bilal.jpg" alt="" class="box-img">
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="detail-box">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                </p>
+                <h6>
+                  Noori
+                </h6>
+                <p>
+                  14
+                </p>
+              </div>
+              <div class="img-box">
+                <img src="images/Review/Noori.jpg" alt="" class="box-img">
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="detail-box">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                </p>
+                <h6>
+                  Bilal Chaudary
+                </h6>
+                <p>
+                  Aeroplane
+                </p>
+              </div>
+              <div class="img-box">
+                <img src="images/Review/bc.jpg" alt="" class="box-img">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end client section -->
+
+  <!-- footer section -->
+
+  <footer class="footer_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 footer-col">
+          <div class="footer_contact">
+            <h4>
+              Contact Us
+            </h4>
+            <div class="contact_link_box">
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Arfa Software Technology Park, Lahore
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Call +920326498420
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  database@gmail.com
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 footer-col">
+          <div class="footer_detail">
+            <a href="" class="footer-logo">
+              Cafetaria
+            </a>
+            <p>
+              Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with
+            </p>
+            <div class="footer_social">
+              <a href="">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-pinterest" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 footer-col">
+          <h4>
+            Opening Hours
+          </h4>
+          <p>
+            Everyday
+          </p>
+          <p>
+            10.00 Am -10.00 Pm
+          </p>
+        </div>
+      </div>
+      <div class="footer-info">
+        <p>
+          &copy; <span id="displayYear"></span> All Rights Reserved By
+          <a href="https://html.design/">Cafetaria</a><br><br>
+          &copy; <span id="displayYear"></span> Distributed By
+          <a href="https://themewagon.com/" target="_blank">CodeLab</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- isotope js -->
+  <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
+  <!-- nice select -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+  <script src="js/add-to-cart.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
+
+</body>
+
+</html>
