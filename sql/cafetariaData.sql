@@ -69,49 +69,49 @@ VALUES ('B1B1','B1B1', 1, 'Barista', '2022-03-01', 35000.00),
 
 -- Insert Menu Items
 -- Coffee
-INSERT INTO Menu (Category, Price, AvailabilityStatus)
-VALUES ('Blonde Vanilla Latte', 350.00, 'Available'),
-       ('Cafe au lait', 300.00, 'Available'),
-       ('Caffe Americano', 400.00, 'Available'),
-       ('Caffe Misto', 320.00, 'Available'),
-       ('Caffe Mocha', 420.00, 'Available'),
-       ('Cappuccino', 350.00, 'Available'),
-       ('Classic Signature Chocolate', 380.00, 'Available'),
-       ('Golden Turmeric Latte', 360.00, 'Available'),
-       ('Honey Almond', 390.00, 'Available'),
-       ('Iced Brown Sugar Oat', 400.00, 'Available'),
-       ('Iced Mocha', 410.00, 'Available'),
-       ('Latte Macchiato', 370.00, 'Available'),
-       ('Lavender Latte', 360.00, 'Available'),
-       ('Signature Chocolate Salted Caramel', 380.00, 'Available'),
-       ('Signature Chocolate Toasted Almond', 390.00, 'Available'),
-       ('Signature Chocolate Toasted Marshmallow', 420.00, 'Available'),
-       ('Sparkling Mint', 350.00, 'Available'),
-       ('Spiced Espresso', 370.00, 'Available'),
-       ('Strawberry Latte', 360.00, 'Available'),
-       ('Vanilla Latte', 390.00, 'Available');
+INSERT INTO Menu (Name, Category, Price, AvailabilityStatus)
+VALUES ('Blonde Vanilla Latte', 'Coffee', 350.00, 'Available'),
+       ('Cafe au lait', 'Coffee', 300.00, 'Available'),
+       ('Caffe Americano', 'Coffee', 400.00, 'Available'),
+       ('Caffe Misto', 'Coffee', 320.00, 'Available'),
+       ('Caffe Mocha', 'Coffee', 420.00, 'Available'),
+       ('Cappuccino', 'Coffee',350.00, 'Available'),
+       ('Classic Signature Chocolate', 'Coffee',380.00, 'Available'),
+       ('Golden Turmeric Latte', 'Coffee', 360.00, 'Available'),
+       ('Honey Almond', 'Coffee',390.00, 'Available'),
+       ('Iced Brown Sugar Oat', 'Coffee', 400.00, 'Available'),
+       ('Iced Mocha', 'Coffee',410.00, 'Available'),
+       ('Latte Macchiato', 'Coffee',370.00, 'Available'),
+       ('Lavender Latte', 'Coffee',360.00, 'Available'),
+       ('Signature Chocolate Salted Caramel', 'Coffee',380.00, 'Available'),
+       ('Signature Chocolate Toasted Almond', 'Coffee',390.00, 'Available'),
+       ('Signature Chocolate Toasted Marshmallow', 'Coffee',420.00, 'Available'),
+       ('Sparkling Mint', 'Coffee',350.00, 'Available'),
+       ('Spiced Espresso', 'Coffee',370.00, 'Available'),
+       ('Strawberry Latte', 'Coffee',360.00, 'Available'),
+       ('Vanilla Latte', 'Coffee',390.00, 'Available');
 
 -- Tea
-INSERT INTO Menu (Category, Price, AvailabilityStatus)
-VALUES ('Chai Latte', 320.00, 'Available'),
-       ('Chai Tea', 300.00, 'Available'),
-       ('Chai Tea Latte', 340.00, 'Available'),
-       ('Iced Chai Latte', 350.00, 'Available'),
-       ('Iced Chai Tea Latte', 330.00, 'Available'),
-       ('Iced Chai Tea Latte with Vanilla Ice Cream', 370.00, 'Available'),
-       ('Iced Chai Tea Oat Latte', 360.00, 'Available');
+INSERT INTO Menu (Name, Category, Price, AvailabilityStatus)
+VALUES ('Chai Latte', 'Tea',320.00, 'Available'),
+       ('Chai Tea', 'Tea',300.00, 'Available'),
+       ('Chai Tea Latte','Tea', 340.00, 'Available'),
+       ('Iced Chai Latte', 'Tea',350.00, 'Available'),
+       ('Iced Chai Tea Latte', 'Tea',330.00, 'Available'),
+       ('Iced Chai Tea Latte with Vanilla Ice Cream', 'Tea',370.00, 'Available'),
+       ('Iced Chai Tea Oat Latte', 'Tea',360.00, 'Available');
 
 -- Brewages
-INSERT INTO Menu (Category, Price, AvailabilityStatus)
-VALUES ('Frozen Tropical Citrus Strawberry Energy Drink', 300.00, 'Available'),
-       ('Melon Burst Energy Drink', 330.00, 'Available'),
-       ('Mango Dragon fruit Lemonade Refreshers', 320.00, 'Available'),
-       ('Pineapple Passion fruit Refreshers Lemonade', 340.00, 'Available'),
-       ('Strawberry Acai Lemonade Refreshers', 310.00, 'Available'),
-       ('Frozen Mango Dragon fruit Refresher Lemonade', 340.00, 'Available'),
-       ('Frozen Pineapple Passion fruit Refresher Lemonade', 330.00, 'Available'),
-       ('Frozen Strawberry Acai Refresher Lemonade', 350.00, 'Available'),
-       ('Tropical Citrus Energy Drink', 320.00, 'Available');
+INSERT INTO Menu (Name, Category, Price, AvailabilityStatus)
+VALUES ('Frozen Tropical Citrus Strawberry Energy Drink', 'Beverage',300.00, 'Available'),
+       ('Melon Burst Energy Drink', 'Beverage',330.00, 'Available'),
+       ('Mango Dragon fruit Lemonade Refreshers', 'Beverage',320.00, 'Available'),
+       ('Pineapple Passion fruit Refreshers Lemonade', 'Beverage',340.00, 'Available'),
+       ('Strawberry Acai Lemonade Refreshers', 'Beverage',310.00, 'Available'),
+       ('Frozen Mango Dragon fruit Refresher Lemonade','Beverage', 340.00, 'Available'),
+       ('Frozen Pineapple Passion fruit Refresher Lemonade', 'Beverage',330.00, 'Available'),
+       ('Frozen Strawberry Acai Refresher Lemonade', 'Beverage',350.00, 'Available'),
+       ('Tropical Citrus Energy Drink', 'Beverage',320.00, 'Available');
 
 -- Frappuccino
 INSERT INTO Menu (Category, Price, AvailabilityStatus)
@@ -126,16 +126,16 @@ VALUES ('Caramel Brule Frappuccino', 400.00, 'Available'),
        ('White Chocolate Creme Frappuccino', 450.00, 'Available');
 
 -- Other Food Items
-INSERT INTO Menu (Category, Price, AvailabilityStatus)
-VALUES ('Beef Burger', 550.00, 'Available'),
-       ('Krunch Burger', 400.00, 'Available'),
-       ('Grilled Fillet Burger', 600.00, 'Available'),
-       ('Cheese Vegetable Pizza', 800.00, 'Available'),
-       ('Mind Margarita Pizza', 700.00, 'Available'),
-       ('Pepperoni Pizza', 850.00, 'Available'),
-       ('Macaroni Pasta', 500.00, 'Available'),
-       ('Alfredo Pasta', 600.00, 'Available'),
-       ('French Fries', 200.00, 'Available');
+INSERT INTO Menu (Name, Category, Price, AvailabilityStatus)
+VALUES ('Beef Burger','Burger', 550.00, 'Available'),
+       ('Krunch Burger', 'Burger',400.00, 'Available'),
+       ('Grilled Fillet Burger', 'Burger',600.00, 'Available'),
+       ('Cheese Vegetable Pizza', 'Pizza',800.00, 'Available'),
+       ('Mind Margarita Pizza', 'Pizza',700.00, 'Available'),
+       ('Pepperoni Pizza', 'Pizza',850.00, 'Available'),
+       ('Macaroni Pasta', 'Pasta',500.00, 'Available'),
+       ('Alfredo Pasta', 'Pasta',600.00, 'Available'),
+       ('French Fries', 'Fries',200.00, 'Available');
 
 
 -- Sample Orders
